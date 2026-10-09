@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consulta Psicopedagógica AB. Acompañamiento educativo y emocional para niños, adolescentes y familias en Santa Coloma de Gramenet.">
-  <meta name="theme-color" content="#9d4f75">
-  <title>AB Psicopedagogía | Consulta psicopedagógica</title>
+  <meta name="description" content="Centre psicoAB - Psicología, Psicopedagogía y Neurodesarrollo. Acompañamiento especializado para niños, adolescentes y familias.">
+  <meta name="theme-color" content="#b26e7a">
+  <title>Centre psicoAB | Psicología · Psicopedagogía · Neurodesarrollo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
   <script src="javascript.js" defer></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -16,11 +16,19 @@
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
+  <!-- NAVEGACIÓN -->
   <header class="site-header" id="inicio">
     <nav class="nav" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="AB Psicopedagogía - Inicio">
-        <span class="brand-mark">AB</span>
-        <span class="brand-text">Psicopedagogía</span>
+      <a class="brand" href="#inicio" aria-label="Centre psicoAB - Inicio">
+        <!-- Logo SVG estilo trazo puzzle + cerebro -->
+        <svg class="brand-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 8h8a4 4 0 0 1 8 0h8a4 4 0 0 1 4 4v8a4 4 0 0 1 0 8v8a4 4 0 0 1-4 4h-8a4 4 0 0 1-8 0h-8a4 4 0 0 1-4-4v-8a4 4 0 0 1 0-8v-8a4 4 0 0 1 4-4z"/>
+          <path d="M20 22c-.5-3 2.5-5 5-4 2-1 4.5.5 4.5 2.5 1.5 0 3 1.5 2.5 3.5 1.5 1 1 3.5-.5 4.5.5 2-1.5 3.5-3.5 3-1 2-3.5 1.5-4.5.5-1.5 1-3.5 0-3.5-2-.5-1.5.5-2.5 0-4-1-1-.5-2.5.5-3.5z" stroke-width="1.6"/>
+        </svg>
+        <div class="brand-text-wrap">
+          <span class="brand-title">Centre psicoAB</span>
+          <span class="brand-subtitle">Psicología · Psicopedagogía · Neurodesarrollo</span>
+        </div>
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="nav-links" aria-expanded="false">
@@ -28,192 +36,360 @@
       </button>
 
       <div class="nav-links" id="nav-links">
+        <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#faq">Preguntas frecuentes</a>
-        <a class="nav-cta" href="#contacto">Pedir cita</a>
+        <a href="#sobre-nosotras">Sobre nosotras</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="#contacto">Solicitar cita</a>
       </div>
     </nav>
 
+    <!-- 1. PORTADA / HERO -->
     <div class="hero">
+      <!-- Decoración botánica de fondo -->
+      <div class="botanical-bg" aria-hidden="true">
+        <svg viewBox="0 0 200 300" fill="none" stroke="#b26e7a" stroke-width="1.2" opacity="0.35">
+          <path d="M100 280 Q90 180 140 100 Q150 70 180 40 M100 240 Q130 220 150 230 Q130 200 105 210 M98 180 Q60 160 50 140 Q80 150 100 165 M115 140 Q150 125 170 140 Q145 110 118 125"/>
+        </svg>
+      </div>
+
       <div class="hero-content reveal">
-        <span class="eyebrow">Consulta Psicopedagógica AB</span>
         <h1>Un espacio para aprender, crecer y sentirse comprendido</h1>
-        <p>Acompañamiento psicopedagógico personalizado para niños, adolescentes y familias, desde una mirada cercana, respetuosa y adaptada a cada necesidad.</p>
+        <p class="hero-desc">
+          Acompañamiento psicopedagógico personalizado para niños, adolescentes y familias, desde una mirada cercana, respetuosa y adaptada a cada necesidad.
+        </p>
+
         <div class="hero-actions">
           <a class="button button-primary" href="#contacto">Solicitar una cita</a>
           <a class="button button-secondary" href="#servicios">Ver servicios</a>
         </div>
-        <div class="hero-points" aria-label="Características del servicio">
-          <span>Atención personalizada</span>
-          <span>Coordinación con familias y escuelas</span>
-          <span>Presencial y online</span>
+
+        <div class="hero-features" aria-label="Valores diferenciales">
+          <div class="feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 7v5l3 3"/></svg>
+            <span>Atención personalizada</span>
+          </div>
+          <div class="feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Coordinación con familias y escuelas</span>
+          </div>
+          <div class="feat-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            <span>Presencial y online</span>
+          </div>
+        </div>
+
+        <div class="hero-quote reveal">
+          <div class="quote-mark">“</div>
+          <p>Cada niño es único. El acompañamiento adecuado puede ayudarle a descubrir sus capacidades y avanzar a su propio ritmo.</p>
         </div>
       </div>
 
-      <div class="hero-card reveal" aria-label="Mensaje de bienvenida">
-        <div class="hero-card-icon">AB</div>
-        <p>“Cada niño es único. El acompañamiento adecuado puede ayudarle a descubrir sus capacidades y avanzar a su propio ritmo.”</p>
+      <div class="hero-media reveal">
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80" alt="Sesión de aprendizaje y apoyo psicopedagógico con niña y especialista" class="hero-img">
+        </div>
       </div>
     </div>
   </header>
 
   <main id="contenido">
-    <section class="section intro-section" aria-labelledby="bienvenida-title">
-      <div class="section-inner intro-grid">
-        <div>
-          <span class="eyebrow">Acompañamiento cercano</span>
-          <h2 id="bienvenida-title">Psicopedagogía centrada en la persona</h2>
+    <!-- 2. ACOMPAÑAMIENTO CERCANO -->
+    <section class="section section-intro" aria-labelledby="intro-title">
+      <div class="section-inner intro-layout">
+        <div class="intro-text reveal">
+          <span class="section-tag">Acompañamiento cercano</span>
+          <h2 id="intro-title">Psicopedagogía centrada en la persona</h2>
+          <p>Somos un equipo de psicólogas y psicopedagogas que acompañamos a niños, adolescentes y familias desde una atención cercana, individualizada y respetuosa.</p>
+          <p>Realizamos valoración e intervención psicopedagógica, adaptándonos a las necesidades y al ritmo de cada persona. Trabajamos dificultades de aprendizaje y del neurodesarrollo, buscando potenciar capacidades y favorecer un aprendizaje significativo y emocionalmente seguro.</p>
+
+          <div class="badge-list" aria-label="Áreas de especialidad">
+            <span class="pill-badge">Aprendizaje</span>
+            <span class="pill-badge">TEA</span>
+            <span class="pill-badge">TDAH</span>
+            <span class="pill-badge">Dislexia</span>
+            <span class="pill-badge">TDL</span>
+            <span class="pill-badge">Neurodesarrollo</span>
+          </div>
         </div>
-        <p>Ofrecemos asesoramiento e intervenciones psicopedagógicas adaptadas a las necesidades de cada niño, adolescente y familia. Nuestro objetivo es potenciar capacidades, abordar las dificultades con calma y favorecer un aprendizaje significativo y emocionalmente seguro.</p>
+
+        <div class="intro-media reveal">
+          <div class="intro-img-frame">
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80" alt="Espacio terapéutico de Centre psicoAB equipado con materiales educativos y luz natural" class="intro-img">
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- 3. CÓMO PODEMOS AYUDARTE (8 TARJETAS) -->
     <section class="section section-soft" id="servicios" aria-labelledby="servicios-title">
       <div class="section-inner">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Cómo podemos ayudarte</span>
-          <h2 id="servicios-title">Servicios</h2>
-          <p>Intervención, evaluación y orientación ajustadas a las necesidades de cada etapa.</p>
+        <div class="section-header reveal">
+          <span class="section-tag">Cómo podemos ayudarte</span>
+          <h2 id="servicios-title">Nuestros servicios</h2>
         </div>
 
         <div class="services-grid">
+          <!-- 01 -->
           <article class="service-card reveal">
-            <span class="service-number">01</span>
-            <h3>Intervención psicopedagógica individual</h3>
-            <p>Apoyo personalizado ante dificultades de aprendizaje, atención, conducta o trastornos del neurodesarrollo como TEA, TDAH o dislexia.</p>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="7" r="4"/><path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2"/></svg>
+              </div>
+              <span class="service-num">01</span>
+            </div>
+            <h3>Intervención psicopedagógica</h3>
+            <p>Acompañamiento individualizado ante dificultades de aprendizaje, atención, conducta y necesidades relacionadas con el neurodesarrollo.</p>
           </article>
+
+          <!-- 02 -->
           <article class="service-card reveal">
-            <span class="service-number">02</span>
-            <h3>Evaluación psicopedagógica</h3>
-            <p>Valoración del perfil cognitivo, emocional y académico, con informe y orientación para la familia y, cuando procede, el centro educativo.</p>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <span class="service-num">02</span>
+            </div>
+            <h3>Valoración psicopedagógica</h3>
+            <p>Evaluación del perfil cognitivo, académico y socioemocional para comprender las necesidades de cada persona y orientar la intervención.</p>
           </article>
+
+          <!-- 03 -->
           <article class="service-card reveal">
-            <span class="service-number">03</span>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <span class="service-num">03</span>
+            </div>
+            <h3>Dificultades de aprendizaje, dislexia y TDL</h3>
+            <p>Valoración e intervención especializada en dificultades de aprendizaje, lectura y escritura, dislexia y Trastorno del Desarrollo del Lenguaje (TDL), adaptando el trabajo al perfil individual.</p>
+          </article>
+
+          <!-- 04 -->
+          <article class="service-card reveal">
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              </div>
+              <span class="service-num">04</span>
+            </div>
             <h3>TEA, TDAH y neurodesarrollo</h3>
-            <p>Acompañamiento especializado basado en el respeto, la estructura, la comprensión de las necesidades individuales y el aprendizaje funcional.</p>
+            <p>Valoración y acompañamiento especializado, respetando las características, capacidades, necesidades y ritmo de cada persona.</p>
           </article>
+
+          <!-- 05 -->
           <article class="service-card reveal">
-            <span class="service-number">04</span>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <span class="service-num">05</span>
+            </div>
             <h3>Familias y centros educativos</h3>
-            <p>Orientación familiar, pautas personalizadas y coordinación con la escuela para favorecer una intervención coherente entre los distintos entornos.</p>
+            <p>Orientación a familias, pautas individualizadas y coordinación con los centros educativos para favorecer una intervención coherente entre los diferentes contextos.</p>
           </article>
+
+          <!-- 06 -->
           <article class="service-card reveal">
-            <span class="service-number">05</span>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <span class="service-num">06</span>
+            </div>
             <h3>Habilidades sociales y emocionales</h3>
-            <p>Trabajo de habilidades sociales, autoestima, resiliencia, comunicación y gestión emocional en un entorno seguro.</p>
+            <p>Trabajo de habilidades sociales, autoestima, comunicación, regulación emocional y resolución de dificultades en un entorno seguro.</p>
           </article>
+
+          <!-- 07 -->
           <article class="service-card reveal">
-            <span class="service-number">06</span>
-            <h3>Dificultades sensoriales asociadas al autismo</h3>
-            <p>Acompañamiento en alimentación selectiva, rutinas de sueño, hipersensibilidad sensorial y otras necesidades de la vida cotidiana.</p>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <span class="service-num">07</span>
+            </div>
+            <h3>Necesidades sensoriales y vida cotidiana</h3>
+            <p>Acompañamiento ante alimentación selectiva, dificultades relacionadas con el sueño, rutinas, hipersensibilidad sensorial y otras necesidades que puedan interferir en el día a día.</p>
           </article>
+
+          <!-- 08 -->
           <article class="service-card reveal">
-            <span class="service-number">07</span>
+            <div class="service-top">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><path d="M10 12h4"/></svg>
+              </div>
+              <span class="service-num">08</span>
+            </div>
             <h3>Sesiones grupales</h3>
-            <p>Grupos reducidos para trabajar habilidades sociales, aprendizajes funcionales y estimulación cognitiva.</p>
+            <p>Grupos reducidos para trabajar habilidades sociales, estimulación cognitiva, aprendizajes funcionales y competencias emocionales.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
-      <div class="section-inner about-grid">
-        <div class="about-visual reveal" aria-hidden="true">
-          <div class="about-monogram">AB</div>
-          <div class="about-badge">Pedagogía · Psicopedagogía</div>
+    <!-- 4. CONÓCEME (SOBRE NOSOTRAS / ASSIA BADIA) -->
+    <section class="section" id="sobre-nosotras" aria-labelledby="sobre-title">
+      <div class="section-inner about-hero-layout">
+        <div class="about-photo-col reveal">
+          <div class="portrait-card">
+            <img src="" alt="Assia Badia - Responsable y Psicopedagoga de Centre psicoAB" class="portrait-img">
+            <div class="portrait-strip">
+              <span class="strip-label">Especialización en</span>
+              <div class="strip-tags">
+                <span>TEA</span>
+                <span>ADI-R y ADOS</span>
+                <span>Dificultades de aprendizaje</span>
+                <span>Dislexia</span>
+                <span>TDL</span>
+                <span>Neurodesarrollo</span>
+                <span>Enfoque cognitivo-conductual</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="about-content reveal">
-          <span class="eyebrow">Conóceme</span>
-          <h2 id="sobre-mi-title">Soy Assia Badia</h2>
-          <p class="lead">Pedagoga y psicopedagoga especializada en el acompañamiento educativo y emocional de niños, adolescentes y sus familias.</p>
+
+        <div class="about-info-col reveal">
+          <span class="section-tag">Conóceme</span>
+          <h2 id="sobre-title">Soy Assia Badia</h2>
+          <p class="lead-bio">Pedagoga y psicopedagoga especializada en el acompañamiento educativo y emocional de niños, adolescentes y sus familias.</p>
           <p>Estoy formada en trastornos del aprendizaje y del neurodesarrollo, con especialización en TEA y enfoque cognitivo-conductual. También estoy acreditada en las herramientas ADI-R y ADOS, utilizadas en la evaluación del espectro autista.</p>
           <p>Mi forma de trabajar se basa en el vínculo, la calma y el conocimiento. Busco ofrecer un espacio seguro y personalizado en el que cada persona pueda avanzar desde sus propias capacidades.</p>
           <p>Trabajo en coordinación con las familias y los centros educativos para conseguir una intervención coherente, cercana y ajustada a cada realidad.</p>
-          <div class="credentials">
-            <span>Especialización en TEA</span>
-            <span>Acreditación ADI-R y ADOS</span>
-            <span>Enfoque cognitivo-conductual</span>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="faq" aria-labelledby="faq-title">
-      <div class="section-inner faq-layout">
-        <div class="section-heading faq-heading reveal">
-          <span class="eyebrow">Resolvemos tus dudas</span>
-          <h2 id="faq-title">Preguntas frecuentes</h2>
-          <p>Si tienes alguna otra pregunta, puedes escribirnos desde el formulario de contacto.</p>
+    <!-- 5. NUESTRO EQUIPO -->
+    <section class="section section-soft" id="equipo" aria-labelledby="equipo-title">
+      <div class="section-inner">
+        <div class="section-header team-header reveal">
+          <span class="section-tag">Nuestro equipo</span>
+          <h2 id="equipo-title">Un equipo que acompaña a cada persona</h2>
+          <p class="team-sub">En Centre psicoAB contamos con un equipo de psicólogas y psicopedagogas que trabaja de manera coordinada para ofrecer una atención especializada, cercana y adaptada a las necesidades de cada niño, adolescente y familia.</p>
         </div>
-        <div class="faq-list reveal">
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false"><span>¿Qué edades atendéis?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Atendemos principalmente a niños y adolescentes, además de orientar y acompañar a sus familias.</p></div>
+
+        <div class="team-grid">
+          <!-- Miembro 1 -->
+          <article class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="" alt="Aina Badia - Psicóloga sanitaria">
+            </div>
+            <h3>Aina Badia</h3>
+            <span class="team-role">Psicóloga sanitaria</span>
+            <p>Especialista en infancia, adolescencia y familia.</p>
           </article>
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false"><span>¿Qué incluye una evaluación?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Incluye entrevista, aplicación de las pruebas necesarias, análisis de resultados, informe y sesión de devolución y orientación.</p></div>
+
+          <!-- Miembro 2 -->
+          <article class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="" alt="Marta Soler - Psicopedagoga">
+            </div>
+            <h3>Marta Soler</h3>
+            <span class="team-role">Psicopedagoga</span>
+            <p>Evaluación e intervención psicopedagógica.</p>
           </article>
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false"><span>¿Es necesario tener un diagnóstico previo?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>No. Puedes acudir sin diagnóstico previo para recibir orientación, valorar las dificultades y decidir los siguientes pasos.</p></div>
+
+          <!-- Miembro 3 -->
+          <article class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="" alt="Laura Pérez - Psicóloga">
+            </div>
+            <h3>Laura Pérez</h3>
+            <span class="team-role">Psicóloga</span>
+            <p>Neurodesarrollo, TEA y atención temprana.</p>
           </article>
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false"><span>¿Ofrecéis sesiones online?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Sí, ofrecemos atención presencial y online cuando el tipo de intervención y las necesidades de la persona lo permiten.</p></div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false"><span>¿Cuánto dura una sesión?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>La duración habitual es de aproximadamente 50 minutos, aunque puede adaptarse según el servicio.</p></div>
-          </article>
-          <article class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false"><span>¿Trabajáis con colegios?</span><span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Sí. Cuando es necesario y existe autorización de la familia, nos coordinamos con centros educativos y profesionales de referencia.</p></div>
+
+          <!-- Miembro 4 -->
+          <article class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="" alt="Clara Rovira - Psicopedagoga">
+            </div>
+            <h3>Clara Rovira</h3>
+            <span class="team-role">Psicopedagoga</span>
+            <p>Aprendizaje, necesidades educativas y orientación.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section contact-section" id="contacto" aria-labelledby="contacto-title">
-      <div class="section-inner contact-grid">
-        <div class="contact-copy reveal">
-          <span class="eyebrow">Hablemos</span>
-          <h2 id="contacto-title">¿Quieres solicitar una cita?</h2>
-          <p>Cuéntanos brevemente qué necesitas y nos pondremos en contacto contigo.</p>
-          <div class="contact-details">
-            <a href="tel:+34611571132"><span class="contact-label">Teléfono</span><strong>+34 611 57 11 32</strong></a>
-            <a href="mailto:centrepsico.ab@gmail.com"><span class="contact-label">Email</span><strong>centrepsico.ab@gmail.com</strong></a>
-            <div><span class="contact-label">Ubicación</span><strong>Carrer del Pedró 33<br>Santa Coloma de Gramenet</strong></div>
+    <!-- 6. CIERRE / CONTACTO -->
+    <section class="section section-cta-contact" id="contacto" aria-labelledby="contacto-heading">
+      <div class="section-inner contact-layout">
+        <!-- Tarjeta de llamada a la acción -->
+        <div class="contact-card-box reveal">
+          <div class="callout-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="callout-text">
+            <h2 id="contacto-heading">¿Hablamos?</h2>
+            <p>Si tienes dudas sobre qué tipo de acompañamiento puede necesitar tu hijo o hija, podemos orientarte.</p>
+          </div>
+          <div class="callout-action">
+            <a href="tel:+34611571132" class="button button-primary">Solicitar una cita &rarr;</a>
           </div>
         </div>
 
-        <form class="contact-form reveal" action="https://formspree.io/f/xjkryjkb" method="POST">
-          <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        <!-- Formulario e información adicional -->
+        <div class="contact-form-grid">
+          <div class="contact-details-col reveal">
+            <span class="section-tag">Atención y consultas</span>
+            <h3>Estamos a tu disposición</h3>
+            <p>Puedes escribirnos o llamarnos directamente para acordar una primera valoración o sesión informativa.</p>
+            <div class="contact-links">
+              <a href="tel:+34611571132">
+                <span>Teléfono</span>
+                <strong>+34 611 57 11 32</strong>
+              </a>
+              <a href="mailto:centrepsico.ab@gmail.com">
+                <span>Correo electrónico</span>
+                <strong>centrepsico.ab@gmail.com</strong>
+              </a>
+              <div>
+                <span>Ubicación</span>
+                <strong>Carrer del Pedró 33, Santa Coloma de Gramenet</strong>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="form-group">
-            <label for="mensaje">¿En qué podemos ayudarte?</label>
-            <textarea id="mensaje" name="message" rows="5" required></textarea>
-          </div>
-          <div class="g-recaptcha" data-sitekey="6LewRVsrAAAAAABvHZNWaJTB7aXN07bvZXQQ9rRp"></div>
-          <button type="submit" class="button button-primary form-submit">Enviar mensaje</button>
-          <p class="form-note">Al enviar este formulario aceptas que utilicemos tus datos únicamente para responder a tu consulta.</p>
-        </form>
+
+          <form class="contact-form reveal" action="https://formspree.io/f/xjkryjkb" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre y apellidos</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre..." required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">¿En qué podemos orientarte?</label>
+              <textarea id="mensaje" name="message" rows="4" placeholder="Explícanos brevemente la consulta..." required></textarea>
+            </div>
+            <div class="g-recaptcha" data-sitekey="6LewRVsrAAAAAABvHZNWaJTB7aXN07bvZXQQ9rRp"></div>
+            <button type="submit" class="button button-primary form-submit">Enviar consulta</button>
+            <p class="form-note">Tus datos serán tratados de forma estrictamente confidencial.</p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <div><strong>AB Psicopedagogía</strong><p>Apoyo individualizado para crecer, aprender y avanzar.</p></div>
-      <div class="footer-links"><a href="#servicios">Servicios</a><a href="#sobre-mi">Sobre mí</a><a href="#contacto">Contacto</a></div>
-      <p class="copyright">© <span id="current-year"></span> Consulta Psicopedagógica AB</p>
+      <div class="footer-brand">
+        <strong>Centre psicoAB</strong>
+        <p>Psicología · Psicopedagogía · Neurodesarrollo</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-nosotras">Sobre nosotras</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="copyright">© <span id="current-year"></span> Centre psicoAB. Todos los derechos reservados.</p>
     </div>
   </footer>
 </body>
